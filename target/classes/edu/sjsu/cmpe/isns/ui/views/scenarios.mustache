@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Home</title>
+</head>
+<body>
+
+    <!--<script language="javascript">
+        function submitThis(){
+            if(document.forms["scenario"]["type1"].checked)
+            {
+                var msg=prompt("Enter message for store");
+                document.write(msg + " : sent Successfully to store");
+               // document.getElementById('scenario').action='storeNotify.html';
+                //document.getElementById('scenario').submit();
+            }
+
+            if(document.forms["scenario"]["type2"].checked)
+            {
+                document.getElementById('scenario').action='deptNotify.html';
+                document.getElementById('scenario').submit();
+            }
+        }
+
+    </script> -->
+
+    <!--<h3>Select a Suitable scenario</h3>
+    <form id="scenario" name="scenario" method="POST">
+        <input type="radio" name="type1" value="type1"> Store wide Notification<br/>
+
+       <select name="storeWide">
+  <option value="Emergency">Emergency</option>
+  <option value="Announcement">Announcement</option>
+  </select>
+ <input type ="textarea" name="msgToSend"/><br/>
+	
+        <input type="radio" name="type2" value="type2"> Department level Notification<br/>
+        <input type="submit" name="submit" onclick="submitThis()" value="go">
+    </form>"/isns/v1/users/alldeptusers"-->
+    <form id="search" name="search" method="GET" action="/all/users/res">
+     <input type="text" name="dept"> Store wide Notification<br/>
+     <input type="submit" name="submit">
+    </form>
+</body>
+</html>

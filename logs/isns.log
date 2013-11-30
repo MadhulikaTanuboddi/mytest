@@ -1,0 +1,1641 @@
+ERROR [2013-11-30 02:41:02,203] com.yammer.dropwizard.jersey.LoggingExceptionMapper: Error handling a request: 0696b57a60878251
+! java.lang.NullPointerException: null
+! at edu.sjsu.cmpe.isns.ui.resources.HomeResource.getHome(HomeResource.java:41) ~[classes/:na]
+! at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.7.0_25]
+! at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57) ~[na:1.7.0_25]
+! at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.7.0_25]
+! at java.lang.reflect.Method.invoke(Method.java:606) ~[na:1.7.0_25]
+! at com.sun.jersey.spi.container.JavaMethodInvokerFactory$1.invoke(JavaMethodInvokerFactory.java:60) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.model.method.dispatch.AbstractResourceMethodDispatchProvider$TypeOutInvoker._dispatch(AbstractResourceMethodDispatchProvider.java:185) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.model.method.dispatch.ResourceJavaMethodDispatcher.dispatch(ResourceJavaMethodDispatcher.java:75) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.yammer.dropwizard.jersey.OptionalResourceMethodDispatchAdapter$OptionalRequestDispatcher.dispatch(OptionalResourceMethodDispatchAdapter.java:37) ~[dropwizard-core-0.6.2.jar:na]
+! at com.sun.jersey.server.impl.uri.rules.HttpMethodRule.accept(HttpMethodRule.java:302) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.uri.rules.ResourceObjectRule.accept(ResourceObjectRule.java:100) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.uri.rules.RightHandPathRule.accept(RightHandPathRule.java:147) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.uri.rules.RootResourceClassesRule.accept(RootResourceClassesRule.java:84) ~[jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1511) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl._handleRequest(WebApplicationImpl.java:1442) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1391) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.server.impl.application.WebApplicationImpl.handleRequest(WebApplicationImpl.java:1381) [jersey-server-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.WebComponent.service(WebComponent.java:416) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:538) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at com.sun.jersey.spi.container.servlet.ServletContainer.service(ServletContainer.java:716) ~[jersey-servlet-1.17.1.jar:1.17.1]
+! at javax.servlet.http.HttpServlet.service(HttpServlet.java:848) ~[javax.servlet-3.0.0.v201112011016.jar:na]
+! at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:669) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1448) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.servlets.ThreadNameFilter.doFilter(ThreadNameFilter.java:29) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1419) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:455) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1075) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:384) ~[jetty-servlet-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1009) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:135) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.metrics.jetty.InstrumentedHandler.handle(InstrumentedHandler.java:200) ~[metrics-jetty-2.2.0.jar:na]
+! at org.eclipse.jetty.server.handler.GzipHandler.handle(GzipHandler.java:264) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.jetty.BiDiGzipHandler.handle(BiDiGzipHandler.java:123) ~[dropwizard-core-0.6.2.jar:na]
+! at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:154) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:116) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.handle(Server.java:368) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.handleRequest(AbstractHttpConnection.java:489) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handleRequest(BlockingHttpConnection.java:53) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection.headerComplete(AbstractHttpConnection.java:942) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractHttpConnection$RequestHandler.headerComplete(AbstractHttpConnection.java:1004) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseNext(HttpParser.java:640) ~[jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.http.HttpParser.parseAvailable(HttpParser.java:235) ~[jetty-http-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.BlockingHttpConnection.handle(BlockingHttpConnection.java:72) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector$BlockingChannelEndPoint.run(BlockingChannelConnector.java:298) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:608) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.thread.QueuedThreadPool$3.run(QueuedThreadPool.java:543) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at java.lang.Thread.run(Thread.java:724) ~[na:1.7.0_25]
+WARN  [2013-11-30 02:57:04,992] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 02:57:05,274] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 02:57:05,279] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 02:57:05,508] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 02:57:05,685] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 02:57:05,685] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 02:57:06,753] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 02:57:06,758] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 02:59:46,785] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 02:59:46,984] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 02:59:46,988] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 02:59:47,201] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 02:59:47,338] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 02:59:47,338] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 02:59:47,915] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+WARN  [2013-11-30 02:59:47,920] org.eclipse.jetty.server.AbstractConnector: insufficient threads configured for SocketConnector@0.0.0.0:8081
+INFO  [2013-11-30 02:59:47,920] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:01:41,764] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:01:41,934] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:01:41,938] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:01:42,152] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:01:42,358] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:01:42,359] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:01:43,354] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:01:43,359] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:04:42,575] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:04:42,787] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:04:42,791] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:04:43,049] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:04:43,224] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:04:43,224] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:04:43,989] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:04:43,993] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:07:00,759] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:07:00,963] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:07:00,967] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:07:01,219] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:07:01,551] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:07:01,552] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:07:02,445] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:07:02,450] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:08:37,606] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:08:37,686] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:08:37,688] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:08:37,784] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:08:37,851] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:08:37,851] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:08:38,281] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:08:38,283] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:14:31,545] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:14:31,801] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:14:31,807] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:14:32,146] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:14:32,316] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:14:32,316] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:14:32,985] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:14:32,989] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:27:29,712] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:27:29,864] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:27:29,867] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:27:30,036] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:27:30,148] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /isns/ (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /isns/all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /isns/v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:27:30,148] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:27:30,786] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:27:30,801] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:29:41,519] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:29:41,717] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:29:41,722] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:29:41,980] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:29:42,194] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     /isns/isns (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /isns/isns/all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /isns/v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:29:42,194] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:29:42,962] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:29:42,965] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:31:19,304] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:31:19,508] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:31:19,513] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:31:19,760] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:31:19,924] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:31:19,924] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:31:20,705] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:31:20,708] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:33:08,889] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:33:09,045] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:33:09,048] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:33:09,231] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:33:09,352] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:33:09,353] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:33:09,922] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:33:09,928] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:36:12,611] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:36:12,786] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:36:12,790] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:36:12,995] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:36:13,124] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:36:13,125] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:36:13,719] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:36:13,724] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:39:50,226] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:39:50,375] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:39:50,378] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:39:50,542] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:39:50,658] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:39:50,658] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+WARN  [2013-11-30 03:39:51,174] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED InstrumentedBlockingChannelConnector@0.0.0.0:8080: java.net.BindException: Address already in use: bind
+! java.net.BindException: Address already in use: bind
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_25]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_25]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_25]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_25]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_25]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector.open(BlockingChannelConnector.java:127) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector.doStart(BlockingChannelConnector.java:85) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:291) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+WARN  [2013-11-30 03:39:51,175] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED SocketConnector@0.0.0.0:8081: java.net.BindException: Address already in use: JVM_Bind
+! java.net.BindException: Address already in use: JVM_Bind
+! at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[na:1.7.0_25]
+! at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[na:1.7.0_25]
+! at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376) ~[na:1.7.0_25]
+! at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[na:1.7.0_25]
+! at java.net.ServerSocket.bind(ServerSocket.java:376) ~[na:1.7.0_25]
+! at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[na:1.7.0_25]
+! at java.net.ServerSocket.<init>(ServerSocket.java:181) ~[na:1.7.0_25]
+! at org.eclipse.jetty.server.bio.SocketConnector.newServerSocket(SocketConnector.java:96) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.bio.SocketConnector.open(SocketConnector.java:85) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.bio.SocketConnector.doStart(SocketConnector.java:156) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:291) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+WARN  [2013-11-30 03:39:51,175] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@3428d853: MultiException[java.net.BindException: Address already in use: bind, java.net.BindException: Address already in use: JVM_Bind]
+! org.eclipse.jetty.util.MultiException: Multiple exceptions
+! at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+ERROR [2013-11-30 03:39:51,176] com.yammer.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! org.eclipse.jetty.util.MultiException: Multiple exceptions
+! at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+INFO  [2013-11-30 03:39:51,176] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:8081
+INFO  [2013-11-30 03:39:51,176] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:39:51,176] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-30 03:39:51,176] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/C:/Users/Santosh/cmpe273-project/IntraStoreNotification/target/classes/}
+INFO  [2013-11-30 03:39:53,178] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/C:/Users/Santosh/cmpe273-project/IntraStoreNotification/target/classes/}
+INFO  [2013-11-30 03:39:53,178] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-30 03:40:04,153] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:40:04,436] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:40:04,441] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:40:04,699] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:40:04,884] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:40:04,885] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:40:05,694] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:40:05,701] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:41:54,812] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:41:54,992] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:41:54,997] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:41:55,253] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:41:55,550] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:41:55,550] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:41:56,430] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:41:56,435] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:44:33,549] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:44:33,803] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:44:33,809] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:44:34,120] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:44:34,258] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:44:34,258] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:44:34,857] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:44:34,861] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:49:50,971] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:49:51,131] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:49:51,134] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:49:51,342] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:49:51,464] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:49:51,464] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:49:52,053] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+WARN  [2013-11-30 03:49:52,058] org.eclipse.jetty.server.AbstractConnector: insufficient threads configured for SocketConnector@0.0.0.0:8081
+INFO  [2013-11-30 03:49:52,059] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:51:55,619] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:51:55,762] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:51:55,766] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:51:55,942] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:51:56,059] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:51:56,059] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:51:56,707] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:51:56,710] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:53:58,352] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:53:58,537] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:53:58,541] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:53:58,732] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:53:58,860] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:53:58,860] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:53:59,689] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:53:59,692] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:57:08,627] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:57:08,774] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:57:08,777] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:57:08,953] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:57:09,067] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:57:09,067] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:57:09,585] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:57:09,588] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 03:59:37,808] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 03:59:38,033] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 03:59:38,038] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 03:59:38,352] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 03:59:38,531] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 03:59:38,532] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 03:59:39,238] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 03:59:39,242] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:09:25,914] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:09:26,130] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:09:26,134] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:09:26,383] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:09:26,555] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:09:26,556] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:09:27,334] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:09:27,341] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:11:04,974] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:11:05,159] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:11:05,163] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:11:05,385] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:11:05,522] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:11:05,523] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:11:06,504] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:11:06,509] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:12:25,963] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:12:26,237] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:12:26,244] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:12:26,519] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:12:26,678] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:12:26,678] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:12:27,328] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:12:27,331] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:14:05,052] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:14:05,203] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:14:05,206] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:14:05,372] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:14:05,475] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:14:05,475] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:14:05,943] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:14:05,946] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:44:51,827] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:44:51,963] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:44:51,966] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:44:52,133] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:44:52,247] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:44:52,248] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:44:52,822] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:44:52,825] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:51:47,937] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:51:48,120] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:51:48,125] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:51:48,294] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:51:48,397] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:51:48,397] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:51:48,859] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:51:48,861] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:54:46,833] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:54:47,023] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:54:47,026] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:54:47,206] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:54:47,329] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:54:47,330] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:54:47,847] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:54:47,849] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 04:59:29,498] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 04:59:29,800] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 04:59:29,827] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 04:59:30,240] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 04:59:30,445] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 04:59:30,445] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 04:59:31,272] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 04:59:31,279] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:07:48,838] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:07:49,074] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:07:49,079] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:07:49,327] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:07:49,471] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:07:49,471] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:07:50,101] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:07:50,104] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:12:59,088] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:12:59,269] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:12:59,273] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:12:59,560] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:12:59,782] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:12:59,783] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:13:00,749] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:13:00,753] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:16:49,148] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:16:49,302] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:16:49,305] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:16:49,485] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:16:49,596] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:16:49,597] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:16:50,417] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+WARN  [2013-11-30 05:16:50,422] org.eclipse.jetty.server.AbstractConnector: insufficient threads configured for SocketConnector@0.0.0.0:8081
+INFO  [2013-11-30 05:16:50,422] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:24:18,593] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:24:18,744] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:24:18,747] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:24:18,910] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:24:19,022] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:24:19,022] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:24:19,574] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:24:19,578] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:27:13,804] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:27:13,970] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:27:13,974] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:27:14,174] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:27:14,316] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:27:14,317] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:27:14,987] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:27:14,990] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:30:51,496] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:30:51,730] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:30:51,735] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:30:51,992] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:30:52,194] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:30:52,194] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:30:52,984] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:30:52,989] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:36:46,175] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:36:46,373] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:36:46,378] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:36:46,640] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:36:46,802] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:36:46,803] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:36:47,811] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 05:36:47,817] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 05:54:18,728] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 05:54:18,881] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 05:54:18,884] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 05:54:19,074] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 05:54:19,196] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 05:54:19,197] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 05:54:19,740] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 05:54:19,744] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:04:05,738] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:04:06,223] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:04:06,231] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:04:06,572] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:04:06,735] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:04:06,736] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:04:07,553] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:04:07,572] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:05:22,862] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:05:23,011] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:05:23,014] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:05:23,185] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:05:23,295] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:05:23,296] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:05:23,796] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:05:23,799] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:12:17,838] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:12:18,040] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:12:18,045] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:12:18,294] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:12:18,454] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:12:18,455] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:12:19,225] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:12:19,228] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:13:33,290] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:13:33,606] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:13:33,620] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:13:34,082] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:13:34,305] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:13:34,305] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:13:35,010] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:13:35,014] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:18:25,931] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:18:26,169] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:18:26,175] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:18:26,398] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:18:26,536] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:18:26,536] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:18:27,177] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:18:27,181] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:18:30,894] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:18:31,186] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:18:31,190] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:18:31,397] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:18:31,537] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:18:31,538] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:18:32,143] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+WARN  [2013-11-30 06:18:32,146] org.eclipse.jetty.server.AbstractConnector: insufficient threads configured for SocketConnector@0.0.0.0:10001
+INFO  [2013-11-30 06:18:32,146] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:22:47,093] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:22:47,297] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:22:47,302] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:22:47,552] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:22:47,709] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:22:47,709] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:22:48,524] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:22:48,529] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:22:52,027] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:22:52,150] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:22:52,153] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:22:52,301] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:22:52,399] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:22:52,399] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:22:53,071] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:22:53,074] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:29:27,279] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:29:27,492] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:29:27,501] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:29:27,764] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:29:27,898] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:29:27,899] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:29:28,489] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:29:28,493] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:29:28,836] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:29:29,029] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:29:29,033] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:29:29,243] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:29:29,350] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:29:29,350] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:29:29,803] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:29:29,805] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:36:08,055] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:36:08,219] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:36:08,223] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:36:08,403] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:36:08,523] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:36:08,524] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:36:09,229] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:36:09,232] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081
+WARN  [2013-11-30 06:36:11,720] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:36:11,996] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:36:12,000] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:36:12,253] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:36:12,399] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:36:12,399] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:36:13,019] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:36:13,024] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:41:05,576] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:41:05,755] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:41:05,760] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:41:06,027] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:41:06,177] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:41:06,178] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:41:06,934] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:41:06,941] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:10001
+WARN  [2013-11-30 06:42:09,142] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:42:09,397] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:42:09,403] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:42:09,753] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:42:09,966] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:42:09,966] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+WARN  [2013-11-30 06:42:10,703] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED InstrumentedBlockingChannelConnector@0.0.0.0:9001: java.net.BindException: Address already in use: bind
+! java.net.BindException: Address already in use: bind
+! at sun.nio.ch.Net.bind0(Native Method) ~[na:1.7.0_25]
+! at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.7.0_25]
+! at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.7.0_25]
+! at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:214) ~[na:1.7.0_25]
+! at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.7.0_25]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector.open(BlockingChannelConnector.java:127) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.nio.BlockingChannelConnector.doStart(BlockingChannelConnector.java:85) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:291) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+WARN  [2013-11-30 06:42:10,705] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED SocketConnector@0.0.0.0:10001: java.net.BindException: Address already in use: JVM_Bind
+! java.net.BindException: Address already in use: JVM_Bind
+! at java.net.DualStackPlainSocketImpl.bind0(Native Method) ~[na:1.7.0_25]
+! at java.net.DualStackPlainSocketImpl.socketBind(DualStackPlainSocketImpl.java:106) ~[na:1.7.0_25]
+! at java.net.AbstractPlainSocketImpl.bind(AbstractPlainSocketImpl.java:376) ~[na:1.7.0_25]
+! at java.net.PlainSocketImpl.bind(PlainSocketImpl.java:190) ~[na:1.7.0_25]
+! at java.net.ServerSocket.bind(ServerSocket.java:376) ~[na:1.7.0_25]
+! at java.net.ServerSocket.<init>(ServerSocket.java:237) ~[na:1.7.0_25]
+! at java.net.ServerSocket.<init>(ServerSocket.java:181) ~[na:1.7.0_25]
+! at org.eclipse.jetty.server.bio.SocketConnector.newServerSocket(SocketConnector.java:96) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.bio.SocketConnector.open(SocketConnector.java:85) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.AbstractConnector.doStart(AbstractConnector.java:316) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.bio.SocketConnector.doStart(SocketConnector.java:156) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.server.Server.doStart(Server.java:291) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) [jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+WARN  [2013-11-30 06:42:10,706] org.eclipse.jetty.util.component.AbstractLifeCycle: FAILED org.eclipse.jetty.server.Server@65924be5: MultiException[java.net.BindException: Address already in use: bind, java.net.BindException: Address already in use: JVM_Bind]
+! org.eclipse.jetty.util.MultiException: Multiple exceptions
+! at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+ERROR [2013-11-30 06:42:10,706] com.yammer.dropwizard.cli.ServerCommand: Unable to start server, shutting down
+! org.eclipse.jetty.util.MultiException: Multiple exceptions
+! at org.eclipse.jetty.server.Server.doStart(Server.java:273) ~[jetty-server-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:64) ~[jetty-util-8.1.10.v20130312.jar:8.1.10.v20130312]
+! at com.yammer.dropwizard.cli.ServerCommand.run(ServerCommand.java:48) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.EnvironmentCommand.run(EnvironmentCommand.java:39) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.ConfiguredCommand.run(ConfiguredCommand.java:58) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.cli.Cli.run(Cli.java:53) ~[dropwizard-core-0.6.2.jar:na]
+! at com.yammer.dropwizard.Service.run(Service.java:61) ~[dropwizard-core-0.6.2.jar:na]
+! at edu.sjsu.cmpe.isns.NotificationService.main(NotificationService.java:24) ~[classes/:na]
+INFO  [2013-11-30 06:42:10,706] org.eclipse.jetty.server.Server: Graceful shutdown SocketConnector@0.0.0.0:10001
+INFO  [2013-11-30 06:42:10,707] org.eclipse.jetty.server.Server: Graceful shutdown InstrumentedBlockingChannelConnector@0.0.0.0:9001
+INFO  [2013-11-30 06:42:10,707] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,null}
+INFO  [2013-11-30 06:42:10,707] org.eclipse.jetty.server.Server: Graceful shutdown o.e.j.s.ServletContextHandler{/,file:/C:/Users/Santosh/cmpe273-project/IntraStoreNotification/target/classes/}
+INFO  [2013-11-30 06:42:12,709] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,file:/C:/Users/Santosh/cmpe273-project/IntraStoreNotification/target/classes/}
+INFO  [2013-11-30 06:42:12,709] org.eclipse.jetty.server.handler.ContextHandler: stopped o.e.j.s.ServletContextHandler{/,null}
+WARN  [2013-11-30 06:42:39,519] com.yammer.dropwizard.config.ServerFactory: 
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!    THIS SERVICE HAS NO HEALTHCHECKS. THIS MEANS YOU WILL NEVER KNOW IF IT    !
+!    DIES IN PRODUCTION, WHICH MEANS YOU WILL NEVER KNOW IF YOU'RE LETTING     !
+!     YOUR USERS DOWN. YOU SHOULD ADD A HEALTHCHECK FOR EACH DEPENDENCY OF     !
+!     YOUR SERVICE WHICH FULLY (BUT LIGHTLY) TESTS YOUR SERVICE'S ABILITY TO   !
+!      USE THAT SERVICE. THINK OF IT AS A CONTINUOUS INTEGRATION TEST.         !
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+INFO  [2013-11-30 06:42:39,709] com.yammer.dropwizard.cli.ServerCommand: Starting intra-store
+INFO  [2013-11-30 06:42:39,713] org.eclipse.jetty.server.Server: jetty-8.1.10.v20130312
+INFO  [2013-11-30 06:42:39,885] com.sun.jersey.server.impl.application.WebApplicationImpl: Initiating Jersey application, version 'Jersey: 1.17.1 02/28/2013 12:47 PM'
+INFO  [2013-11-30 06:42:40,003] com.yammer.dropwizard.config.Environment: The following paths were found for the configured resources:
+
+    GET     / (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /all/users/res (edu.sjsu.cmpe.isns.ui.resources.HomeResource)
+    GET     /v1/ (edu.sjsu.cmpe.isns.api.resources.RootResource)
+    GET     /isns/v1/users/alldeptusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    GET     /isns/v1/users/allusers (edu.sjsu.cmpe.isns.api.resources.UserResource)
+    POST    /isns/v1/users (edu.sjsu.cmpe.isns.api.resources.UserResource)
+
+INFO  [2013-11-30 06:42:40,003] com.yammer.dropwizard.config.Environment: tasks = 
+
+    POST    /tasks/gc (com.yammer.dropwizard.tasks.GarbageCollectionTask)
+
+INFO  [2013-11-30 06:42:40,814] org.eclipse.jetty.server.AbstractConnector: Started InstrumentedBlockingChannelConnector@0.0.0.0:8080
+INFO  [2013-11-30 06:42:40,820] org.eclipse.jetty.server.AbstractConnector: Started SocketConnector@0.0.0.0:8081

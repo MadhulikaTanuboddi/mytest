@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Home</title>
+</head>
+<body>
+<table width="200" border="1">
+  <tr>
+  <form method="GET" action="/all/users/res">
+    <th scope="row"><input type="submit" name="Display Users" id="btn_usr" value="Users"></th>
+    <td>&nbsp;</td>
+    </form>
+  </tr>
+  <tr>
+    <th scope="row"><input type="button" name="button" id="button" value="Users By Dept"></th>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+  <form method="GET" action="./storeWideMsg">
+    <th scope="row"><input type="submit" name="StoreWide Notification" id="notify" value="StoreWide Notification"></th>
+    <td>&nbsp;</td>
+	</form>
+  </tr>
+    <th scope="row"><input type="Submit" name="button3" id="button3"  value="DeptWide Notification" onMouseDown="streWide.hidden=false"></th>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+<div id="streWide" hidden="true">
+Hiiiii
+</div>
+
+</body>
+</html>
